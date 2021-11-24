@@ -5,12 +5,8 @@ import ReactDOM from 'react-dom';
 
 function Contact() {
     return (
-        <div className="App">
-            <header className="App-header">
-
-                <p>Contact</p>
-
-            </header>
+        <div >
+       <p>Contact</p>
         </div>
     );
 }

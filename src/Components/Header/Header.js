@@ -24,8 +24,8 @@ function Header() {
                         <img src={logo} alt="Logo" />
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'row' }}>
-                        <NavLink to="/about" ><About className="div-logo" /></NavLink>
-                        <NavLink to="/contact"  ><Contact className="div-logo" /></NavLink>
+                        <NavLink to="/about" className="nav-Link" ><About className="div-logo" /></NavLink>
+                        <NavLink to="/contact" className="nav-Link" ><Contact className="div-logo" /></NavLink>
                         {/* <button></button> */}
                     </div>
                 </div>

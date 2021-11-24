@@ -19,11 +19,13 @@ nav{
     align-items: center;
 }
 
-.div-logo{
+.div-logo {
     height: 50px;
     width: 30px;
     padding: 0 20px;
-   
+
+}
+.nav-Link{
     
-    
+    margin: 53px;
 }
