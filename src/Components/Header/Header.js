@@ -1,21 +1,46 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+
 import logo from '../../assets/Logo-Tarkus.png';
+import './Header.css';
+
+import About from '../About/About';
+import Contact from '../Contact/Contact';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    NavLink
+} from "react-router-dom";
 //import {ReactComponent as Home}
 
 function Header() {
     return (
-        <nav>
+        <Router>
+            <nav>
+                <div className="div-header">
+                    <div className="div-logo">
+                        {/* INSERINDO A LOGO */}
+                        <img src={logo} alt="Logo" />
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'row' }}>
+                        <NavLink to="/about" ><About className="div-logo" /></NavLink>
+                        <NavLink to="/contact"  ><Contact className="div-logo" /></NavLink>
+                        {/* <button></button> */}
+                    </div>
+                </div>
+            </nav >
 
-            {/*INSERINDO A LOGO*/}
-            <div>
-                <img src={logo} alt="Logo" />
-            </div>
-            <div>
+        </Router>
 
-            </div>
-        </nav>
     );
 }
 
 export default Header;
+
+
+/*
+
+*/
+
+
