@@ -1,7 +1,9 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+//import './index.css';
 
-import './App.css';
 
-function App() {
+function Login() {
   return (
     <div className="App">
       <header className="App-header">
@@ -15,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
